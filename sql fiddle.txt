@@ -1,0 +1,42 @@
+CREATE TABLE customers_master(
+  customer_id  NUMBER PRIMARY KEY,
+  customer_name VARCHAR2(100),
+  phone         VARCHAR2(20)
+  );
+  
+CREATE TABLE customers_updates(
+  customer_id  NUMBER PRIMARY KEY,
+  customer_name  VARCHAR2(100),
+  phone          VARCHAR2(20)
+  );
+  
+  INSERT INTO customers_master(customer_id,customer_name,phone) VALUES(101,'John', '111-111');
+  INSERT INTO customers_master(customer_id,customer_name,phone) VALUES(102,'Kiki', '222-222');
+  INSERT INTO customers_master(customer_id,customer_name,phone) VALUES(103,'Eshu', '333-333');
+  INSERT INTO customers_master(customer_id,customer_name,phone) VALUES(104,'Yashna', '444-444');
+  
+  COMMIT;
+  
+  INSERT INTO customers_updates(customer_id,customer_name,phone) VALUES(101,'John M', '111-999');
+  INSERT INTO customers_updates(customer_id,customer_name,phone) VALUES(103,'Eshu', '333-333');
+  INSERT INTO customers_updates(customer_id,customer_name,phone) VALUES(105,'Eva', '555-555');
+  
+  COMMIT;
+  MERGE INTO customers_master m
+USING customers_updates u
+  ON (m.customer_id = u.customer_id)
+WHEN MATCHED THEN
+  UPDATE SET m.customer_name = u.customer_name,
+             m.phone         = u.phone
+WHEN NOT MATCHED THEN
+  INSERT (customer_id, customer_name, phone)
+  VALUES (u.customer_id, u.customer_name, u.phone);
+
+COMMIT;
+DELETE FROM customers_master m
+WHERE NOT EXISTS (
+  SELECT 1 FROM customers_updates u WHERE u.customer_id = m.customer_id
+);
+
+COMMIT;
+SELECT * FROM customers_master ORDER BY customer_id;

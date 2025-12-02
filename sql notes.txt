@@ -1,0 +1,169 @@
+1. Types of SQL Commands + Examples
+
+DQL – Data Query Language → SELECT * FROM employees;
+DDL – Data Definition Language → CREATE TABLE, ALTER, DROP
+DML – Data Manipulation Language → INSERT, UPDATE, DELETE
+DCL – Data Control Language → GRANT, REVOKE
+TCL – Transaction Control → COMMIT, ROLLBACK, SAVEPOINT
+
+2. Normalization vs Denormalization
+
+Normalization: Organizing data to reduce redundancy → improves consistency.
+Denormalization: Adding redundancy for performance → reduces joins.
+
+3. 1NF, 2NF, 3NF
+
+1NF: No repeating columns, all values atomic.
+2NF: 1NF + no partial dependency on composite key.
+3NF: 2NF + no transitive dependency.
+
+4. Use Case for Denormalization
+
+In reporting dashboards: storing total sales per day in the table itself to avoid calculating SUM every time.
+
+5. Primary Key vs Foreign Key
+
+Primary Key: Uniquely identifies a record (no nulls).
+Foreign Key: Points to primary key of another table → maintains relationships.
+
+6. Alternate Key vs Candidate Key
+
+Candidate Key: All possible unique keys.
+Alternate Key: Candidate key that is not chosen as primary key.
+
+7. Window Functions
+
+Functions that operate over a window of rows without collapsing them. Example:
+SUM(salary) OVER(PARTITION BY dept)
+
+8. Ranking Functions
+
+Functions: ROW_NUMBER, RANK, DENSE_RANK, NTILE
+Example table:
+
+Emp	Salary
+A	5000
+B	5000
+C	4000
+
+Output with RANK():
+
+Emp	Salary	Rank
+A	5000	1
+B	5000	1
+C	4000	3
+
+9. Types of Joins + Records Returned
+
+INNER JOIN → Matching rows only.
+LEFT JOIN → All left + matched right.
+RIGHT JOIN → All right + matched left.
+FULL JOIN → All rows from both sides.
+CROSS JOIN → Cartesian product.
+Use case: LEFT JOIN for customers with/without orders.
+
+10. When Self Join Required
+
+Employee–manager hierarchy stored in same table.
+
+SELECT e.name, m.name AS manager
+FROM emp e
+JOIN emp m ON e.manager_id = m.id;
+
+11. What is Subquery?
+
+A query inside another query → returns data for outer query.
+
+12. What is Correlated Subquery?
+
+Inner query depends on outer query row-by-row.
+
+SELECT name FROM emp e
+WHERE salary > (SELECT AVG(salary) FROM emp WHERE dept = e.dept);
+
+13. What is CTE?
+
+Temporary named result set using WITH → improves readability.
+
+14. What is Derived Table?
+
+A subquery used as a table inside FROM.
+
+SELECT * FROM (SELECT * FROM emp) t;
+
+15. Third Highest Salary
+SELECT salary 
+FROM emp
+ORDER BY salary DESC
+OFFSET 2 ROWS FETCH NEXT 1 ROW ONLY;
+
+16. Third Highest Salary per Department
+SELECT dept, salary
+FROM (
+  SELECT dept, salary,
+         DENSE_RANK() OVER(PARTITION BY dept ORDER BY salary DESC) r
+  FROM emp
+) x
+WHERE r = 3;
+
+17. Find Duplicate Values in One Column
+SELECT col, COUNT(*)
+FROM table
+GROUP BY col
+HAVING COUNT(*) > 1;
+
+18. Find Duplicate Values in Multiple Columns
+SELECT col1, col2, COUNT(*)
+FROM table
+GROUP BY col1, col2
+HAVING COUNT(*) > 1;
+
+19. ACID Properties
+
+Atomicity: All or nothing.
+Consistency: Valid state before & after.
+Isolation: Transactions don’t interfere.
+Durability: Data persists after commit.
+
+20. UNION vs UNION ALL
+
+UNION removes duplicates → slower.
+UNION ALL keeps duplicates → faster.
+
+21. Primary Key vs Unique Key
+
+Primary Key: One per table, no nulls.
+Unique Key: Multiple allowed, accepts nulls.
+
+22. TRUNCATE vs DELETE
+
+DELETE: Row-by-row, logs, supports WHERE.
+TRUNCATE: Removes all rows, faster, no WHERE.
+
+23. HAVING vs WHERE
+
+WHERE filters rows before grouping.
+HAVING filters after grouping.
+
+24. SQL Query Execution Order
+
+FROM → JOIN → WHERE → GROUP BY → HAVING → SELECT → ORDER BY → LIMIT
+
+25. Indexes + Types
+
+Indexes speed up reads by creating a data structure.
+Types:
+
+Clustered → sorts actual data.
+Non-clustered → separate structure with pointers.
+Unique Index → enforces uniqueness.
+Composite Index → multiple columns.
+
+26. Ways to Optimize SQL Query
+
+Use indexes
+Avoid SELECT *
+Use proper joins
+Filter early (WHERE)
+Analyze execution plan
+Use limit, partitioning, caching

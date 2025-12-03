@@ -1,0 +1,647 @@
+Authenticating with public key "Imported-Openssh-Key"
+    +----------------------------------------------------------------------+
+    ¦                 • MobaXterm Personal Edition v25.4 •                 ¦
+    ¦               (SSH client, X server and network tools)               ¦
+    ¦                                                                      ¦
+    ¦ ? SSH session to ec2-user@18.134.163.221                             ¦
+    ¦   • Direct SSH      :  ?                                             ¦
+    ¦   • SSH compression :  ?                                             ¦
+    ¦   • SSH-browser     :  ?                                             ¦
+    ¦   • X11-forwarding  :  ?  (disabled or not supported by server)      ¦
+    ¦                                                                      ¦
+    ¦ ? For more info, ctrl+click on help or visit our website.            ¦
+    +----------------------------------------------------------------------+
+
+Register this system with Red Hat Insights: insights-client --register
+Create an account or view all your systems at https://red.ht/insights-dashboard
+Last failed login: Wed Dec  3 10:14:20 UTC 2025 from 81.235.199.224 on ssh:notty
+There was 1 failed login attempt since the last successful login.
+Last login: Wed Dec  3 10:12:01 2025 from 77.101.166.212
+[ec2-user@ip-172-31-8-235 ~]$ ls
+18nov                 bd_devops          dbapi_image.tar             get-pip.py          k8s-nginx         myagen
+a_copy_local.txt      big_datajan2025    delete_all_topics.sh        hbase-site.xml      Kavya             newfil
+a_local.txt           BigData_May        Docker                      hbase-site.xml.jar  kubeml            newinp
+a_local.txtcancelooo  Big_Data_Training  DockerTutorial              ian                 kubemlPr          notes.
+APIPython             catbd125           docker.zip                  jenkins             merged_local.txt  Prathy
+a.txt                 danish             elasticsearch_installation  jenkins@tmp         Microsoft         readhb
+azure_devops          dashboard          flask-api                   k8s-dbapi           muyiwa-flask-api  samuel
+[ec2-user@ip-172-31-8-235 ~]$ hdfs dfs /
+ERROR: JAVA_HOME /usr/lib/jvm/java-21-openjdk does not exist.
+[ec2-user@ip-172-31-8-235 ~]$ hdfs dfs -ls /
+ERROR: JAVA_HOME /usr/lib/jvm/java-21-openjdk does not exist.
+[ec2-user@ip-172-31-8-235 ~]$ ^C^C
+[ec2-user@ip-172-31-8-235 ~]$ source .bashrc
+[ec2-user@ip-172-31-8-235 ~]$ hdfs dfs -ls /
+Found 9 items
+drwxr-xr-x   - Consultants supergroup          0 2025-11-28 00:26 /DE011025
+drwxr-xr-x   - hive        hive                0 2022-12-22 10:37 /hive
+drwxr-xr-x   - hdfs        supergroup          0 2025-10-10 12:58 /home
+drwxr-xr-x   - impala      impala              0 2022-12-22 10:44 /impala
+drwxr-xr-x   - kafka       kafka               0 2025-01-02 16:50 /kafka
+drwxrwxrwt   - hdfs        hadoop              0 2025-12-02 20:49 /tmp
+drwxrwxrwx   - hive        hive                0 2025-10-19 21:34 /user
+drwxrwxrwx   - hdfs        supergroup          0 2022-12-22 10:37 /warehouse
+drwxr-xr-x   - hdfs        supergroup          0 2022-12-19 23:37 /yarn
+[ec2-user@ip-172-31-8-235 ~]$ hdfs dfs -ls
+\Found 30 items
+drwxrwxrwx   - ec2-user ec2-user          0 2025-12-02 21:00 .Trash
+drwxrwxrwx   - ec2-user ec2-user          0 2025-10-14 16:00 .scratchdir
+drwxr-xr-x   - ec2-user ec2-user          0 2025-09-22 09:06 .sparkStaging
+drwx------   - ec2-user ec2-user          0 2025-11-07 15:58 .staging
+drwxr-xr-x   - ec2-user ec2-user          0 2025-06-03 08:25 BD_May
+drwxr-xr-x   - ec2-user ec2-user          0 2025-11-24 17:45 DE01102025
+drwxr-xr-x   - ec2-user ec2-user          0 2025-12-03 10:26 UKDec
+drwxr-xr-x   - ec2-user ec2-user          0 2025-12-02 20:41 UKUS18nov
+drwxr-xr-x   - ec2-user ec2-user          0 2025-09-25 15:58 UKUS29725
+drwxr-xr-x   - ec2-user ec2-user          0 2025-06-05 13:50 US_UK_05052025
+-rw-r--r--   3 ec2-user ec2-user         62 2025-04-16 12:12 Welcome
+drwxrwxrwx   - ec2-user ec2-user          0 2025-03-07 20:53 _sqoop
+-rw-r--r--   3 ec2-user ec2-user          6 2025-12-03 11:03 a.txt
+drwxr-xr-x   - ec2-user ec2-user          0 2025-05-28 14:39 bd
+drwxr-xr-x   - ec2-user ec2-user          0 2025-06-10 15:21 e2ep
+-rw-r--r--   3 ec2-user ec2-user          0 2025-06-03 13:36 employee_contact.py
+drwxr-xr-x   - ec2-user ec2-user          0 2025-04-23 12:59 hdfsmar2025
+-rw-r--r--   3 ec2-user ec2-user          0 2025-12-02 15:00 hellothere.txt
+drwxr-xr-x   - ec2-user ec2-user          0 2025-06-18 15:52 home
+-rw-r--r--   3 ec2-user ec2-user          0 2025-06-15 20:49 incremental_load_script
+drwxr-xr-x   - ec2-user ec2-user          0 2025-05-20 13:07 input
+drwxr-xr-x   - ec2-user ec2-user          0 2025-12-02 13:13 oozie-oozi
+drwxr-xr-x   - ec2-user ec2-user          0 2025-06-13 04:37 rf_model
+-rw-r--r--   3 ec2-user ec2-user          0 2025-06-03 08:28 spark-dataframe
+-rw-r--r--   3 ec2-user ec2-user  789282400 2025-10-23 15:20 synthetic_beverage_sales_data.csv
+drwxr-xr-x   - ec2-user ec2-user          0 2025-09-25 09:25 tmp
+drwxr-xr-x   - ec2-user ec2-user          0 2025-05-28 15:40 user
+drwxr-xr-x   - ec2-user ec2-user          0 2025-06-16 13:21 warehouse
+-rw-r--r--   3 ec2-user ec2-user          0 2025-06-02 13:30 wordcount.py
+-rw-r--r--   3 ec2-user ec2-user          0 2025-06-02 12:02 wordcount1.py
+[ec2-user@ip-172-31-8-235 ~]$ hdfs dfs -ls /user
+Found 22 items
+drwx--x--x   - Consultants hive                0 2025-12-02 01:32 /user/Consultants
+drwxr-xr-x   - hive        hive                0 2025-10-13 18:18 /user/DE011025
+drwxr-xr-x   - Consultants hive                0 2025-10-10 14:18 /user/Gharza
+drwxr-xr-x   - Consultants hive                0 2025-10-09 14:24 /user/Gharzay
+drwxr-xr-x   - hive        hive                0 2025-10-19 21:34 /user/Jaydb
+drwxr-xr-x   - admin       admin               0 2023-01-29 12:12 /user/admin
+drwxrwxrwx   - ec2-user    ec2-user            0 2025-12-03 11:03 /user/ec2-user
+drwxr-xr-x   - jenkins     supergroup          0 2023-08-03 15:38 /user/ec2user
+drwxr-xr-x   - ec2-user    supergroup          0 2025-02-24 23:07 /user/hadoop
+drwx------   - hdfs        supergroup          0 2025-02-26 15:44 /user/hdfs
+drwxrwxrwx   - mapred      hive                0 2025-02-25 10:56 /user/history
+drwxrwxr-t   - hive        hive                0 2025-12-02 15:06 /user/hive
+drwxrwxr-x   - hue         hue                 0 2022-12-30 12:44 /user/hue
+drwxrwxr-x   - impala      impala              0 2022-12-23 11:23 /user/impala
+drwx------   - jenkins     hive                0 2025-06-18 23:58 /user/jenkins
+drwxr-xr-x   - Consultants hive                0 2025-10-09 20:18 /user/nicksteen
+drwxrwxr-x   - oozie       oozie               0 2022-12-22 10:45 /user/oozie
+drwxr-xr-x   - ec2-user    hive                0 2025-06-03 10:28 /user/pavani
+drwx------   - root        hive                0 2025-03-18 11:05 /user/root
+drwxr-x--x   - spark       spark               0 2022-12-29 12:15 /user/spark
+drwxr-xr-x   - hdfs        supergroup          0 2022-12-22 10:41 /user/tez
+drwxr-xr-x   - yarn        yarn                0 2025-02-26 01:42 /user/yarn
+[ec2-user@ip-172-31-8-235 ~]$ hdfs dfs -ls /user/ec2-user
+Found 30 items
+drwxrwxrwx   - ec2-user ec2-user          0 2025-12-02 21:00 /user/ec2-user/.Trash
+drwxrwxrwx   - ec2-user ec2-user          0 2025-10-14 16:00 /user/ec2-user/.scratchdir
+drwxr-xr-x   - ec2-user ec2-user          0 2025-09-22 09:06 /user/ec2-user/.sparkStaging
+drwx------   - ec2-user ec2-user          0 2025-11-07 15:58 /user/ec2-user/.staging
+drwxr-xr-x   - ec2-user ec2-user          0 2025-06-03 08:25 /user/ec2-user/BD_May
+drwxr-xr-x   - ec2-user ec2-user          0 2025-11-24 17:45 /user/ec2-user/DE01102025
+drwxr-xr-x   - ec2-user ec2-user          0 2025-12-03 10:26 /user/ec2-user/UKDec
+drwxr-xr-x   - ec2-user ec2-user          0 2025-12-02 20:41 /user/ec2-user/UKUS18nov
+drwxr-xr-x   - ec2-user ec2-user          0 2025-09-25 15:58 /user/ec2-user/UKUS29725
+drwxr-xr-x   - ec2-user ec2-user          0 2025-06-05 13:50 /user/ec2-user/US_UK_05052025
+-rw-r--r--   3 ec2-user ec2-user         62 2025-04-16 12:12 /user/ec2-user/Welcome
+drwxrwxrwx   - ec2-user ec2-user          0 2025-03-07 20:53 /user/ec2-user/_sqoop
+-rw-r--r--   3 ec2-user ec2-user          6 2025-12-03 11:03 /user/ec2-user/a.txt
+drwxr-xr-x   - ec2-user ec2-user          0 2025-05-28 14:39 /user/ec2-user/bd
+drwxr-xr-x   - ec2-user ec2-user          0 2025-06-10 15:21 /user/ec2-user/e2ep
+-rw-r--r--   3 ec2-user ec2-user          0 2025-06-03 13:36 /user/ec2-user/employee_contact.py
+drwxr-xr-x   - ec2-user ec2-user          0 2025-04-23 12:59 /user/ec2-user/hdfsmar2025
+-rw-r--r--   3 ec2-user ec2-user          0 2025-12-02 15:00 /user/ec2-user/hellothere.txt
+drwxr-xr-x   - ec2-user ec2-user          0 2025-06-18 15:52 /user/ec2-user/home
+-rw-r--r--   3 ec2-user ec2-user          0 2025-06-15 20:49 /user/ec2-user/incremental_load_script
+drwxr-xr-x   - ec2-user ec2-user          0 2025-05-20 13:07 /user/ec2-user/input
+drwxr-xr-x   - ec2-user ec2-user          0 2025-12-02 13:13 /user/ec2-user/oozie-oozi
+drwxr-xr-x   - ec2-user ec2-user          0 2025-06-13 04:37 /user/ec2-user/rf_model
+-rw-r--r--   3 ec2-user ec2-user          0 2025-06-03 08:28 /user/ec2-user/spark-dataframe
+-rw-r--r--   3 ec2-user ec2-user  789282400 2025-10-23 15:20 /user/ec2-user/synthetic_beverage_sales_data.csv
+drwxr-xr-x   - ec2-user ec2-user          0 2025-09-25 09:25 /user/ec2-user/tmp
+drwxr-xr-x   - ec2-user ec2-user          0 2025-05-28 15:40 /user/ec2-user/user
+drwxr-xr-x   - ec2-user ec2-user          0 2025-06-16 13:21 /user/ec2-user/warehouse
+-rw-r--r--   3 ec2-user ec2-user          0 2025-06-02 13:30 /user/ec2-user/wordcount.py
+-rw-r--r--   3 ec2-user ec2-user          0 2025-06-02 12:02 /user/ec2-user/wordcount1.py
+[ec2-user@ip-172-31-8-235 ~]$ hdfs dfs -ls /user/ec2-user/UKDec
+Found 1 items
+drwxr-xr-x   - ec2-user ec2-user          0 2025-12-03 10:58 /user/ec2-user/UKDec/Spandana
+[ec2-user@ip-172-31-8-235 ~]$ hdfs dfs -ls /user/ec2-user/UKDec/Spandana
+Found 1 items
+-rw-r--r--   3 ec2-user ec2-user          6 2025-12-03 10:58 /user/ec2-user/UKDec/Spandana/a.txt
+[ec2-user@ip-172-31-8-235 ~]$ ^C
+[ec2-user@ip-172-31-8-235 ~]$ kls
+-bash: kls: command not found
+[ec2-user@ip-172-31-8-235 ~]$ ls
+18nov                 bd_devops          dbapi_image.tar             get-pip.py          k8s-nginx         myagen
+a_copy_local.txt      big_datajan2025    delete_all_topics.sh        hbase-site.xml      Kavya             newfil
+a_local.txt           BigData_May        Docker                      hbase-site.xml.jar  kubeml            newinp
+a_local.txtcancelooo  Big_Data_Training  DockerTutorial              ian                 kubemlPr          notes.
+APIPython             catbd125           docker.zip                  jenkins             merged_local.txt  Prathy
+a.txt                 danish             elasticsearch_installation  jenkins@tmp         Microsoft         readhb
+azure_devops          dashboard          flask-api                   k8s-dbapi           muyiwa-flask-api  samuel
+[ec2-user@ip-172-31-8-235 ~]$ hdfs dfs -put a_local.txt /user/ec2-user/UKDec/Spandana
+[ec2-user@ip-172-31-8-235 ~]$ ls
+18nov                 bd_devops          dbapi_image.tar             get-pip.py          k8s-nginx         myagen
+a_copy_local.txt      big_datajan2025    delete_all_topics.sh        hbase-site.xml      Kavya             newfil
+a_local.txt           BigData_May        Docker                      hbase-site.xml.jar  kubeml            newinp
+a_local.txtcancelooo  Big_Data_Training  DockerTutorial              ian                 kubemlPr          notes.
+APIPython             catbd125           docker.zip                  jenkins             merged_local.txt  Prathy
+a.txt                 danish             elasticsearch_installation  jenkins@tmp         Microsoft         readhb
+azure_devops          dashboard          flask-api                   k8s-dbapi           muyiwa-flask-api  samuel
+[ec2-user@ip-172-31-8-235 ~]$ ^C
+[ec2-user@ip-172-31-8-235 ~]$ hdfs dfs -ls /user/ec2-user/UKDec/Spandana
+Found 2 items
+-rw-r--r--   3 ec2-user ec2-user          6 2025-12-03 10:58 /user/ec2-user/UKDec/Spandana/a.txt
+-rw-r--r--   3 ec2-user ec2-user          6 2025-12-03 11:26 /user/ec2-user/UKDec/Spandana/a_local.txt
+[ec2-user@ip-172-31-8-235 ~]$ ls
+18nov                 bd_devops          dbapi_image.tar             get-pip.py          k8s-nginx         myagen
+a_copy_local.txt      big_datajan2025    delete_all_topics.sh        hbase-site.xml      Kavya             newfil
+a_local.txt           BigData_May        Docker                      hbase-site.xml.jar  kubeml            newinp
+a_local.txtcancelooo  Big_Data_Training  DockerTutorial              ian                 kubemlPr          notes.
+APIPython             catbd125           docker.zip                  jenkins             merged_local.txt  Prathy
+a.txt                 danish             elasticsearch_installation  jenkins@tmp         Microsoft         readhb
+azure_devops          dashboard          flask-api                   k8s-dbapi           muyiwa-flask-api  samuel
+[ec2-user@ip-172-31-8-235 ~]$ hdfs dfs -copyFromLocal a_copy_local.txt /user/ec2-user/UKDec/Spandana
+[ec2-user@ip-172-31-8-235 ~]$ hdfs dfs -ls /user/ec2-user/UKDec/Spandana
+Found 3 items
+-rw-r--r--   3 ec2-user ec2-user          6 2025-12-03 10:58 /user/ec2-user/UKDec/Spandana/a.txt
+-rw-r--r--   3 ec2-user ec2-user         45 2025-12-03 11:30 /user/ec2-user/UKDec/Spandana/a_copy_local.txt
+-rw-r--r--   3 ec2-user ec2-user          6 2025-12-03 11:26 /user/ec2-user/UKDec/Spandana/a_local.txt
+[ec2-user@ip-172-31-8-235 ~]$ ls
+18nov                 bd_devops          dbapi_image.tar             get-pip.py          k8s-nginx         myagen
+a_copy_local.txt      big_datajan2025    delete_all_topics.sh        hbase-site.xml      Kavya             newfil
+a_local.txt           BigData_May        Docker                      hbase-site.xml.jar  kubeml            newinp
+a_local.txtcancelooo  Big_Data_Training  DockerTutorial              ian                 kubemlPr          notes.
+APIPython             catbd125           docker.zip                  jenkins             merged_local.txt  Prathy
+a.txt                 danish             elasticsearch_installation  jenkins@tmp         Microsoft         readhb
+azure_devops          dashboard          flask-api                   k8s-dbapi           muyiwa-flask-api  samuel
+[ec2-user@ip-172-31-8-235 ~]$ hdfs dfs -copyFromLocal a_copy_local.txt /user/ec2-user/UKDec/Spandana^C
+[ec2-user@ip-172-31-8-235 ~]$ hdfs dfs -get /user/ec2-user/UKDec/Spandana/a_copy_local.txt
+get: `a_copy_local.txt': File exists
+[ec2-user@ip-172-31-8-235 ~]$ hdfs dfs -get /user/ec2-user/UKDec/Spandana/a.txt b.txt
+[ec2-user@ip-172-31-8-235 ~]$ lslsls^C
+[ec2-user@ip-172-31-8-235 ~]$ ls
+18nov                 b.txt                       get-pip.py          merged_local.txt  ssh
+a_copy_local.txt      catbd125                    hbase-site.xml      Microsoft         test2.txt
+a_local.txt           danish                      hbase-site.xml.jar  muyiwa-flask-api  testpyspar.py
+a_local.txtcancelooo  dashboard                   ian                 myagent           tmp
+APIPython             dbapi_image.tar             jenkins             newfile.txt       Untitled1.ipynb
+a.txt                 delete_all_topics.sh        jenkins@tmp         newinput.txt      Untitled.ipynb
+azure_devops          Docker                      k8s-dbapi           notes.txt         untitled.py
+bd_devops             DockerTutorial              k8s-nginx           Prathyusha        usuk30
+big_datajan2025       docker.zip                  Kavya               readhbase.py      venv
+BigData_May           elasticsearch_installation  kubeml              samuel
+Big_Data_Training     flask-api                   kubemlPr            spandy
+[ec2-user@ip-172-31-8-235 ~]$ hdfs dfs -get /user/ec2-user/UKDec/Spandana/a.txt b.txt^C
+[ec2-user@ip-172-31-8-235 ~]$ hdfs dfs -copyToLocal /user/ec2-user/UKDec/Spandana/a.txt c.txt
+[ec2-user@ip-172-31-8-235 ~]$ ls
+18nov                 b.txt                       flask-api           kubemlPr          spandy
+a_copy_local.txt      catbd125                    get-pip.py          merged_local.txt  ssh
+a_local.txt           c.txt                       hbase-site.xml      Microsoft         test2.txt
+a_local.txtcancelooo  danish                      hbase-site.xml.jar  muyiwa-flask-api  testpyspar.py
+APIPython             dashboard                   ian                 myagent           tmp
+a.txt                 dbapi_image.tar             jenkins             newfile.txt       Untitled1.ipynb
+azure_devops          delete_all_topics.sh        jenkins@tmp         newinput.txt      Untitled.ipynb
+bd_devops             Docker                      k8s-dbapi           notes.txt         untitled.py
+big_datajan2025       DockerTutorial              k8s-nginx           Prathyusha        usuk30
+BigData_May           docker.zip                  Kavya               readhbase.py      venv
+Big_Data_Training     elasticsearch_installation  kubeml              samuel
+[ec2-user@ip-172-31-8-235 ~]$ hdfs dfs -copyToLocal /user/ec2-user/UKDec/Spandana/a.txt c.txt^C
+[ec2-user@ip-172-31-8-235 ~]$ hdfs dfs -cp /user/ec2-user/UKDec/Spandana/a.txt /user/ec2-user/UKDec/Spandana/b.txt
+[ec2-user@ip-172-31-8-235 ~]$ hdfs dfs -cp /user/ec2-user/UKDec/Spandana/a.txt /user/ec2-user/UKDec/Spandana/ab.txt
+[ec2-user@ip-172-31-8-235 ~]$ hdfs dfs -ls /user/ec2-user/UKDec/Spandana
+Found 5 items
+-rw-r--r--   3 ec2-user ec2-user          6 2025-12-03 10:58 /user/ec2-user/UKDec/Spandana/a.txt
+-rw-r--r--   3 ec2-user ec2-user         45 2025-12-03 11:30 /user/ec2-user/UKDec/Spandana/a_copy_local.txt
+-rw-r--r--   3 ec2-user ec2-user          6 2025-12-03 11:26 /user/ec2-user/UKDec/Spandana/a_local.txt
+-rw-r--r--   3 ec2-user ec2-user          6 2025-12-03 11:39 /user/ec2-user/UKDec/Spandana/ab.txt
+-rw-r--r--   3 ec2-user ec2-user          6 2025-12-03 11:39 /user/ec2-user/UKDec/Spandana/b.txt
+[ec2-user@ip-172-31-8-235 ~]$ hdfs dfs -mv /user/ec2-user/UKDec/Spandana/a.txt /user/ec2-user/UKDec/Spandana/abc.txt
+[ec2-user@ip-172-31-8-235 ~]$ hdfs dfs -ls /user/ec2-user/UKDec/Spandana                                         Found 5 items
+-rw-r--r--   3 ec2-user ec2-user         45 2025-12-03 11:30 /user/ec2-user/UKDec/Spandana/a_copy_local.txt
+-rw-r--r--   3 ec2-user ec2-user          6 2025-12-03 11:26 /user/ec2-user/UKDec/Spandana/a_local.txt
+-rw-r--r--   3 ec2-user ec2-user          6 2025-12-03 11:39 /user/ec2-user/UKDec/Spandana/ab.txt
+-rw-r--r--   3 ec2-user ec2-user          6 2025-12-03 10:58 /user/ec2-user/UKDec/Spandana/abc.txt
+-rw-r--r--   3 ec2-user ec2-user          6 2025-12-03 11:39 /user/ec2-user/UKDec/Spandana/b.txt
+[ec2-user@ip-172-31-8-235 ~]$ hdfs dfs -cat /user/ec2-user/UKDec/Spandana/abc.txt
+hello
+[ec2-user@ip-172-31-8-235 ~]$ ^C
+[ec2-user@ip-172-31-8-235 ~]$ hdfs dfs -tail /user/ec2-user/UKDec/Spandana/abc.txt
+hello
+[ec2-user@ip-172-31-8-235 ~]$ hdfs dfs -touchz /user/ec2-user/UKDec/Spandana/abc.txt
+touchz: `/user/ec2-user/UKDec/Spandana/abc.txt': Not a zero-length file
+[ec2-user@ip-172-31-8-235 ~]$ hdfs dfs -touchz /user/ec2-user/UKDec/Spandana/aa.txt
+[ec2-user@ip-172-31-8-235 ~]$ hdfs dfs -ls /user/ec2-user/UKDec/Spandana
+Found 6 items
+-rw-r--r--   3 ec2-user ec2-user         45 2025-12-03 11:30 /user/ec2-user/UKDec/Spandana/a_copy_local.txt
+-rw-r--r--   3 ec2-user ec2-user          6 2025-12-03 11:26 /user/ec2-user/UKDec/Spandana/a_local.txt
+-rw-r--r--   3 ec2-user ec2-user          0 2025-12-03 11:49 /user/ec2-user/UKDec/Spandana/aa.txt
+-rw-r--r--   3 ec2-user ec2-user          6 2025-12-03 11:39 /user/ec2-user/UKDec/Spandana/ab.txt
+-rw-r--r--   3 ec2-user ec2-user          6 2025-12-03 10:58 /user/ec2-user/UKDec/Spandana/abc.txt
+-rw-r--r--   3 ec2-user ec2-user          6 2025-12-03 11:39 /user/ec2-user/UKDec/Spandana/b.txt
+[ec2-user@ip-172-31-8-235 ~]$ hdfs dfs -cat /user/ec2-user/UKDec/Spandana/aa.txt
+[ec2-user@ip-172-31-8-235 ~]$ ^C
+[ec2-user@ip-172-31-8-235 ~]$ hdfs dfs -setrep /user/ec2-user/UKDec/Spandana/aa.txt
+-setrep: Not enough arguments: expected 2 but got 1
+Usage: hadoop fs [generic options]
+        [-appendToFile <localsrc> ... <dst>]
+        [-cat [-ignoreCrc] <src> ...]
+        [-checksum <src> ...]
+        [-chgrp [-R] GROUP PATH...]
+        [-chmod [-R] <MODE[,MODE]... | OCTALMODE> PATH...]
+        [-chown [-R] [OWNER][:[GROUP]] PATH...]
+        [-copyFromLocal [-f] [-p] [-l] [-d] [-t <thread count>] <localsrc> ... <dst>]
+        [-copyToLocal [-f] [-p] [-ignoreCrc] [-crc] <src> ... <localdst>]
+        [-count [-q] [-h] [-v] [-t [<storage type>]] [-u] [-x] [-e] [-s] <path> ...]
+        [-cp [-f] [-p | -p[topax]] [-d] <src> ... <dst>]
+        [-createSnapshot <snapshotDir> [<snapshotName>]]
+        [-deleteSnapshot <snapshotDir> <snapshotName>]
+        [-df [-h] [<path> ...]]
+        [-du [-s] [-h] [-v] [-x] <path> ...]
+        [-expunge [-immediate]]
+        [-find <path> ... <expression> ...]
+        [-get [-f] [-p] [-ignoreCrc] [-crc] <src> ... <localdst>]
+        [-getfacl [-R] <path>]
+        [-getfattr [-R] {-n name | -d} [-e en] <path>]
+        [-getmerge [-nl] [-skip-empty-file] <src> <localdst>]
+        [-head <file>]
+        [-help [cmd ...]]
+        [-ls [-C] [-d] [-h] [-q] [-R] [-t] [-S] [-r] [-u] [-e] [<path> ...]]
+        [-mkdir [-p] <path> ...]
+        [-moveFromLocal [-f] [-p] [-l] [-d] <localsrc> ... <dst>]
+        [-moveToLocal <src> <localdst>]
+        [-mv <src> ... <dst>]
+        [-put [-f] [-p] [-l] [-d] [-t <thread count>] <localsrc> ... <dst>]
+        [-renameSnapshot <snapshotDir> <oldName> <newName>]
+        [-rm [-f] [-r|-R] [-skipTrash] [-safely] <src> ...]
+        [-rmdir [--ignore-fail-on-non-empty] <dir> ...]
+        [-setfacl [-R] [{-b|-k} {-m|-x <acl_spec>} <path>]|[--set <acl_spec> <path>]]
+        [-setfattr {-n name [-v value] | -x name} <path>]
+        [-setrep [-R] [-w] <rep> <path> ...]
+        [-stat [format] <path> ...]
+        [-tail [-f] [-s <sleep interval>] <file>]
+        [-test -[defsz] <path>]
+        [-text [-ignoreCrc] <src> ...]
+        [-touch [-a] [-m] [-t TIMESTAMP (yyyyMMdd:HHmmss) ] [-c] <path> ...]
+        [-touchz <path> ...]
+        [-truncate [-w] <length> <path> ...]
+        [-usage [cmd ...]]
+
+Generic options supported are:
+-conf <configuration file>        specify an application configuration file
+-D <property=value>               define a value for a given property
+-fs <file:///|hdfs://namenode:port> specify default filesystem URL to use, overrides 'fs.defaultFS' property from configurations.
+-jt <local|resourcemanager:port>  specify a ResourceManager
+-files <file1,...>                specify a comma-separated list of files to be copied to the map reduce cluster
+-libjars <jar1,...>               specify a comma-separated list of jar files to be included in the classpath
+-archives <archive1,...>          specify a comma-separated list of archives to be unarchived on the compute machines
+
+The general command line syntax is:
+command [genericOptions] [commandOptions]
+
+Usage: hadoop fs [generic options] -setrep [-R] [-w] <rep> <path> ...
+[ec2-user@ip-172-31-8-235 ~]$ hdfs dfs -setrep 4 /user/ec2-user/UKDec/Spandana/aa.txt
+Replication 4 set: /user/ec2-user/UKDec/Spandana/aa.txt
+[ec2-user@ip-172-31-8-235 ~]$ hdfs dfs -ls /user/ec2-user/UKDec/Spandana
+Found 6 items
+-rw-r--r--   3 ec2-user ec2-user         45 2025-12-03 11:30 /user/ec2-user/UKDec/Spandana/a_copy_local.txt
+-rw-r--r--   3 ec2-user ec2-user          6 2025-12-03 11:26 /user/ec2-user/UKDec/Spandana/a_local.txt
+-rw-r--r--   4 ec2-user ec2-user          0 2025-12-03 11:49 /user/ec2-user/UKDec/Spandana/aa.txt
+-rw-r--r--   3 ec2-user ec2-user          6 2025-12-03 11:39 /user/ec2-user/UKDec/Spandana/ab.txt
+-rw-r--r--   3 ec2-user ec2-user          6 2025-12-03 10:58 /user/ec2-user/UKDec/Spandana/abc.txt
+-rw-r--r--   3 ec2-user ec2-user          6 2025-12-03 11:39 /user/ec2-user/UKDec/Spandana/b.txt
+[ec2-user@ip-172-31-8-235 ~]$ ^C
+[ec2-user@ip-172-31-8-235 ~]$ hdfs dfs -count /user/ec2-user/UKDec/Spandana
+           1            6                 69 /user/ec2-user/UKDec/Spandana
+[ec2-user@ip-172-31-8-235 ~]$ ^C
+[ec2-user@ip-172-31-8-235 ~]$ hdfs dfs -count /user/ec2-user/UKDec/Spandana/*
+           0            1                 45 /user/ec2-user/UKDec/Spandana/a_copy_local.txt
+           0            1                  6 /user/ec2-user/UKDec/Spandana/a_local.txt
+           0            1                  0 /user/ec2-user/UKDec/Spandana/aa.txt
+           0            1                  6 /user/ec2-user/UKDec/Spandana/ab.txt
+           0            1                  6 /user/ec2-user/UKDec/Spandana/abc.txt
+           0            1                  6 /user/ec2-user/UKDec/Spandana/b.txt
+[ec2-user@ip-172-31-8-235 ~]$ hdfs dfs -cat /user/ec2-user/UKDec/Spandana/a_copy_local.txt
+hello
+My name is Kavya.
+It's a testing file.
+[ec2-user@ip-172-31-8-235 ~]$ hdfs dfs -chmod /user/ec2-user/UKDec/Spandana/aa.txt
+-chmod: Not enough arguments: expected 2 but got 1
+Usage: hadoop fs [generic options]
+        [-appendToFile <localsrc> ... <dst>]
+        [-cat [-ignoreCrc] <src> ...]
+        [-checksum <src> ...]
+        [-chgrp [-R] GROUP PATH...]
+        [-chmod [-R] <MODE[,MODE]... | OCTALMODE> PATH...]
+        [-chown [-R] [OWNER][:[GROUP]] PATH...]
+        [-copyFromLocal [-f] [-p] [-l] [-d] [-t <thread count>] <localsrc> ... <dst>]
+        [-copyToLocal [-f] [-p] [-ignoreCrc] [-crc] <src> ... <localdst>]
+        [-count [-q] [-h] [-v] [-t [<storage type>]] [-u] [-x] [-e] [-s] <path> ...]
+        [-cp [-f] [-p | -p[topax]] [-d] <src> ... <dst>]
+        [-createSnapshot <snapshotDir> [<snapshotName>]]
+        [-deleteSnapshot <snapshotDir> <snapshotName>]
+        [-df [-h] [<path> ...]]
+        [-du [-s] [-h] [-v] [-x] <path> ...]
+        [-expunge [-immediate]]
+        [-find <path> ... <expression> ...]
+        [-get [-f] [-p] [-ignoreCrc] [-crc] <src> ... <localdst>]
+        [-getfacl [-R] <path>]
+        [-getfattr [-R] {-n name | -d} [-e en] <path>]
+        [-getmerge [-nl] [-skip-empty-file] <src> <localdst>]
+        [-head <file>]
+        [-help [cmd ...]]
+        [-ls [-C] [-d] [-h] [-q] [-R] [-t] [-S] [-r] [-u] [-e] [<path> ...]]
+        [-mkdir [-p] <path> ...]
+        [-moveFromLocal [-f] [-p] [-l] [-d] <localsrc> ... <dst>]
+        [-moveToLocal <src> <localdst>]
+        [-mv <src> ... <dst>]
+        [-put [-f] [-p] [-l] [-d] [-t <thread count>] <localsrc> ... <dst>]
+        [-renameSnapshot <snapshotDir> <oldName> <newName>]
+        [-rm [-f] [-r|-R] [-skipTrash] [-safely] <src> ...]
+        [-rmdir [--ignore-fail-on-non-empty] <dir> ...]
+        [-setfacl [-R] [{-b|-k} {-m|-x <acl_spec>} <path>]|[--set <acl_spec> <path>]]
+        [-setfattr {-n name [-v value] | -x name} <path>]
+        [-setrep [-R] [-w] <rep> <path> ...]
+        [-stat [format] <path> ...]
+        [-tail [-f] [-s <sleep interval>] <file>]
+        [-test -[defsz] <path>]
+        [-text [-ignoreCrc] <src> ...]
+        [-touch [-a] [-m] [-t TIMESTAMP (yyyyMMdd:HHmmss) ] [-c] <path> ...]
+        [-touchz <path> ...]
+        [-truncate [-w] <length> <path> ...]
+        [-usage [cmd ...]]
+
+Generic options supported are:
+-conf <configuration file>        specify an application configuration file
+-D <property=value>               define a value for a given property
+-fs <file:///|hdfs://namenode:port> specify default filesystem URL to use, overrides 'fs.defaultFS' property from configurations.
+-jt <local|resourcemanager:port>  specify a ResourceManager
+-files <file1,...>                specify a comma-separated list of files to be copied to the map reduce cluster
+-libjars <jar1,...>               specify a comma-separated list of jar files to be included in the classpath
+-archives <archive1,...>          specify a comma-separated list of archives to be unarchived on the compute machines
+
+The general command line syntax is:
+command [genericOptions] [commandOptions]
+
+Usage: hadoop fs [generic options] -chmod [-R] <MODE[,MODE]... | OCTALMODE> PATH...
+[ec2-user@ip-172-31-8-235 ~]$ hdfs dfs -chmod 771 ^Cser/ec2-user/UKDec/Spandana/aa.txt
+[ec2-user@ip-172-31-8-235 ~]$ hdfs dfs -chmod /user/ec2-user/UKDec/Spandana/aa.txt
+-chmod: Not enough arguments: expected 2 but got 1
+Usage: hadoop fs [generic options]
+        [-appendToFile <localsrc> ... <dst>]
+        [-cat [-ignoreCrc] <src> ...]
+        [-checksum <src> ...]
+        [-chgrp [-R] GROUP PATH...]
+        [-chmod [-R] <MODE[,MODE]... | OCTALMODE> PATH...]
+        [-chown [-R] [OWNER][:[GROUP]] PATH...]
+        [-copyFromLocal [-f] [-p] [-l] [-d] [-t <thread count>] <localsrc> ... <dst>]
+        [-copyToLocal [-f] [-p] [-ignoreCrc] [-crc] <src> ... <localdst>]
+        [-count [-q] [-h] [-v] [-t [<storage type>]] [-u] [-x] [-e] [-s] <path> ...]
+        [-cp [-f] [-p | -p[topax]] [-d] <src> ... <dst>]
+        [-createSnapshot <snapshotDir> [<snapshotName>]]
+        [-deleteSnapshot <snapshotDir> <snapshotName>]
+        [-df [-h] [<path> ...]]
+        [-du [-s] [-h] [-v] [-x] <path> ...]
+        [-expunge [-immediate]]
+        [-find <path> ... <expression> ...]
+        [-get [-f] [-p] [-ignoreCrc] [-crc] <src> ... <localdst>]
+        [-getfacl [-R] <path>]
+        [-getfattr [-R] {-n name | -d} [-e en] <path>]
+        [-getmerge [-nl] [-skip-empty-file] <src> <localdst>]
+        [-head <file>]
+        [-help [cmd ...]]
+        [-ls [-C] [-d] [-h] [-q] [-R] [-t] [-S] [-r] [-u] [-e] [<path> ...]]
+        [-mkdir [-p] <path> ...]
+        [-moveFromLocal [-f] [-p] [-l] [-d] <localsrc> ... <dst>]
+        [-moveToLocal <src> <localdst>]
+        [-mv <src> ... <dst>]
+        [-put [-f] [-p] [-l] [-d] [-t <thread count>] <localsrc> ... <dst>]
+        [-renameSnapshot <snapshotDir> <oldName> <newName>]
+        [-rm [-f] [-r|-R] [-skipTrash] [-safely] <src> ...]
+        [-rmdir [--ignore-fail-on-non-empty] <dir> ...]
+        [-setfacl [-R] [{-b|-k} {-m|-x <acl_spec>} <path>]|[--set <acl_spec> <path>]]
+        [-setfattr {-n name [-v value] | -x name} <path>]
+        [-setrep [-R] [-w] <rep> <path> ...]
+        [-stat [format] <path> ...]
+        [-tail [-f] [-s <sleep interval>] <file>]
+        [-test -[defsz] <path>]
+        [-text [-ignoreCrc] <src> ...]
+        [-touch [-a] [-m] [-t TIMESTAMP (yyyyMMdd:HHmmss) ] [-c] <path> ...]
+        [-touchz <path> ...]
+        [-truncate [-w] <length> <path> ...]
+        [-usage [cmd ...]]
+
+Generic options supported are:
+-conf <configuration file>        specify an application configuration file
+-D <property=value>               define a value for a given property
+-fs <file:///|hdfs://namenode:port> specify default filesystem URL to use, overrides 'fs.defaultFS' property from configurations.
+-jt <local|resourcemanager:port>  specify a ResourceManager
+-files <file1,...>                specify a comma-separated list of files to be copied to the map reduce cluster
+-libjars <jar1,...>               specify a comma-separated list of jar files to be included in the classpath
+-archives <archive1,...>          specify a comma-separated list of archives to be unarchived on the compute machines
+
+The general command line syntax is:
+command [genericOptions] [commandOptions]
+
+Usage: hadoop fs [generic options] -chmod [-R] <MODE[,MODE]... | OCTALMODE> PATH...
+[ec2-user@ip-172-31-8-235 ~]$ hdfs dfs -chmod 771 /user/ec2-user/UKDec/Spandana/aa.txt
+[ec2-user@ip-172-31-8-235 ~]$ hdfs dfs -getmerge /user/ec2-user/UKDec/Spandana/aa.txt
+-getmerge: Not enough arguments: expected 2 but got 1
+Usage: hadoop fs [generic options]
+        [-appendToFile <localsrc> ... <dst>]
+        [-cat [-ignoreCrc] <src> ...]
+        [-checksum <src> ...]
+        [-chgrp [-R] GROUP PATH...]
+        [-chmod [-R] <MODE[,MODE]... | OCTALMODE> PATH...]
+        [-chown [-R] [OWNER][:[GROUP]] PATH...]
+        [-copyFromLocal [-f] [-p] [-l] [-d] [-t <thread count>] <localsrc> ... <dst>]
+        [-copyToLocal [-f] [-p] [-ignoreCrc] [-crc] <src> ... <localdst>]
+        [-count [-q] [-h] [-v] [-t [<storage type>]] [-u] [-x] [-e] [-s] <path> ...]
+        [-cp [-f] [-p | -p[topax]] [-d] <src> ... <dst>]
+        [-createSnapshot <snapshotDir> [<snapshotName>]]
+        [-deleteSnapshot <snapshotDir> <snapshotName>]
+        [-df [-h] [<path> ...]]
+        [-du [-s] [-h] [-v] [-x] <path> ...]
+        [-expunge [-immediate]]
+        [-find <path> ... <expression> ...]
+        [-get [-f] [-p] [-ignoreCrc] [-crc] <src> ... <localdst>]
+        [-getfacl [-R] <path>]
+        [-getfattr [-R] {-n name | -d} [-e en] <path>]
+        [-getmerge [-nl] [-skip-empty-file] <src> <localdst>]
+        [-head <file>]
+        [-help [cmd ...]]
+        [-ls [-C] [-d] [-h] [-q] [-R] [-t] [-S] [-r] [-u] [-e] [<path> ...]]
+        [-mkdir [-p] <path> ...]
+        [-moveFromLocal [-f] [-p] [-l] [-d] <localsrc> ... <dst>]
+        [-moveToLocal <src> <localdst>]
+        [-mv <src> ... <dst>]
+        [-put [-f] [-p] [-l] [-d] [-t <thread count>] <localsrc> ... <dst>]
+        [-renameSnapshot <snapshotDir> <oldName> <newName>]
+        [-rm [-f] [-r|-R] [-skipTrash] [-safely] <src> ...]
+        [-rmdir [--ignore-fail-on-non-empty] <dir> ...]
+        [-setfacl [-R] [{-b|-k} {-m|-x <acl_spec>} <path>]|[--set <acl_spec> <path>]]
+        [-setfattr {-n name [-v value] | -x name} <path>]
+        [-setrep [-R] [-w] <rep> <path> ...]
+        [-stat [format] <path> ...]
+        [-tail [-f] [-s <sleep interval>] <file>]
+        [-test -[defsz] <path>]
+        [-text [-ignoreCrc] <src> ...]
+        [-touch [-a] [-m] [-t TIMESTAMP (yyyyMMdd:HHmmss) ] [-c] <path> ...]
+        [-touchz <path> ...]
+        [-truncate [-w] <length> <path> ...]
+        [-usage [cmd ...]]
+
+Generic options supported are:
+-conf <configuration file>        specify an application configuration file
+-D <property=value>               define a value for a given property
+-fs <file:///|hdfs://namenode:port> specify default filesystem URL to use, overrides 'fs.defaultFS' property from configurations.
+-jt <local|resourcemanager:port>  specify a ResourceManager
+-files <file1,...>                specify a comma-separated list of files to be copied to the map reduce cluster
+-libjars <jar1,...>               specify a comma-separated list of jar files to be included in the classpath
+-archives <archive1,...>          specify a comma-separated list of archives to be unarchived on the compute machines
+
+The general command line syntax is:
+command [genericOptions] [commandOptions]
+
+Usage: hadoop fs [generic options] -getmerge [-nl] [-skip-empty-file] <src> <localdst>
+[ec2-user@ip-172-31-8-235 ~]$ ls
+18nov                 b.txt                       flask-api           kubemlPr          spandy
+a_copy_local.txt      catbd125                    get-pip.py          merged_local.txt  ssh
+a_local.txt           c.txt                       hbase-site.xml      Microsoft         test2.txt
+a_local.txtcancelooo  danish                      hbase-site.xml.jar  muyiwa-flask-api  testpyspar.py
+APIPython             dashboard                   ian                 myagent           tmp
+a.txt                 dbapi_image.tar             jenkins             newfile.txt       Untitled1.ipynb
+azure_devops          delete_all_topics.sh        jenkins@tmp         newinput.txt      Untitled.ipynb
+bd_devops             Docker                      k8s-dbapi           notes.txt         untitled.py
+big_datajan2025       DockerTutorial              k8s-nginx           Prathyusha        usuk30
+BigData_May           docker.zip                  Kavya               readhbase.py      venv
+Big_Data_Training     elasticsearch_installation  kubeml              samuel
+[ec2-user@ip-172-31-8-235 ~]$ hdfs dfs -ls /user/ec2-user/UKDec/Spandana
+Found 6 items
+-rw-r--r--   3 ec2-user ec2-user         45 2025-12-03 11:30 /user/ec2-user/UKDec/Spandana/a_copy_local.txt
+-rw-r--r--   3 ec2-user ec2-user          6 2025-12-03 11:26 /user/ec2-user/UKDec/Spandana/a_local.txt
+-rwxrwx--x   4 ec2-user ec2-user          0 2025-12-03 11:49 /user/ec2-user/UKDec/Spandana/aa.txt
+-rw-r--r--   3 ec2-user ec2-user          6 2025-12-03 11:39 /user/ec2-user/UKDec/Spandana/ab.txt
+-rw-r--r--   3 ec2-user ec2-user          6 2025-12-03 10:58 /user/ec2-user/UKDec/Spandana/abc.txt
+-rw-r--r--   3 ec2-user ec2-user          6 2025-12-03 11:39 /user/ec2-user/UKDec/Spandana/b.txt
+[ec2-user@ip-172-31-8-235 ~]$ hdfs dfs -cat /user/ec2-user/UKDec/Spandana/aa.txt
+[ec2-user@ip-172-31-8-235 ~]$ hdfs dfs -getmerge /user/ec2-user/UKDec/Spandana/a.txt
+-getmerge: Not enough arguments: expected 2 but got 1
+Usage: hadoop fs [generic options]
+        [-appendToFile <localsrc> ... <dst>]
+        [-cat [-ignoreCrc] <src> ...]
+        [-checksum <src> ...]
+        [-chgrp [-R] GROUP PATH...]
+        [-chmod [-R] <MODE[,MODE]... | OCTALMODE> PATH...]
+        [-chown [-R] [OWNER][:[GROUP]] PATH...]
+        [-copyFromLocal [-f] [-p] [-l] [-d] [-t <thread count>] <localsrc> ... <dst>]
+        [-copyToLocal [-f] [-p] [-ignoreCrc] [-crc] <src> ... <localdst>]
+        [-count [-q] [-h] [-v] [-t [<storage type>]] [-u] [-x] [-e] [-s] <path> ...]
+        [-cp [-f] [-p | -p[topax]] [-d] <src> ... <dst>]
+        [-createSnapshot <snapshotDir> [<snapshotName>]]
+        [-deleteSnapshot <snapshotDir> <snapshotName>]
+        [-df [-h] [<path> ...]]
+        [-du [-s] [-h] [-v] [-x] <path> ...]
+        [-expunge [-immediate]]
+        [-find <path> ... <expression> ...]
+        [-get [-f] [-p] [-ignoreCrc] [-crc] <src> ... <localdst>]
+        [-getfacl [-R] <path>]
+        [-getfattr [-R] {-n name | -d} [-e en] <path>]
+        [-getmerge [-nl] [-skip-empty-file] <src> <localdst>]
+        [-head <file>]
+        [-help [cmd ...]]
+        [-ls [-C] [-d] [-h] [-q] [-R] [-t] [-S] [-r] [-u] [-e] [<path> ...]]
+        [-mkdir [-p] <path> ...]
+        [-moveFromLocal [-f] [-p] [-l] [-d] <localsrc> ... <dst>]
+        [-moveToLocal <src> <localdst>]
+        [-mv <src> ... <dst>]
+        [-put [-f] [-p] [-l] [-d] [-t <thread count>] <localsrc> ... <dst>]
+        [-renameSnapshot <snapshotDir> <oldName> <newName>]
+        [-rm [-f] [-r|-R] [-skipTrash] [-safely] <src> ...]
+        [-rmdir [--ignore-fail-on-non-empty] <dir> ...]
+        [-setfacl [-R] [{-b|-k} {-m|-x <acl_spec>} <path>]|[--set <acl_spec> <path>]]
+        [-setfattr {-n name [-v value] | -x name} <path>]
+        [-setrep [-R] [-w] <rep> <path> ...]
+        [-stat [format] <path> ...]
+        [-tail [-f] [-s <sleep interval>] <file>]
+        [-test -[defsz] <path>]
+        [-text [-ignoreCrc] <src> ...]
+        [-touch [-a] [-m] [-t TIMESTAMP (yyyyMMdd:HHmmss) ] [-c] <path> ...]
+        [-touchz <path> ...]
+        [-truncate [-w] <length> <path> ...]
+        [-usage [cmd ...]]
+
+Generic options supported are:
+-conf <configuration file>        specify an application configuration file
+-D <property=value>               define a value for a given property
+-fs <file:///|hdfs://namenode:port> specify default filesystem URL to use, overrides 'fs.defaultFS' property from configurations.
+-jt <local|resourcemanager:port>  specify a ResourceManager
+-files <file1,...>                specify a comma-separated list of files to be copied to the map reduce cluster
+-libjars <jar1,...>               specify a comma-separated list of jar files to be included in the classpath
+-archives <archive1,...>          specify a comma-separated list of archives to be unarchived on the compute machines
+
+The general command line syntax is:
+command [genericOptions] [commandOptions]
+
+Usage: hadoop fs [generic options] -getmerge [-nl] [-skip-empty-file] <src> <localdst>
+[ec2-user@ip-172-31-8-235 ~]$ hdfs dfs -getmerge /user/ec2-user/UKDec/Spandana/a.txt^C
+[ec2-user@ip-172-31-8-235 ~]$ hdfs dfs -getmerge /user/ec2-user/UKDec/Spandana/ a.txt
+[ec2-user@ip-172-31-8-235 ~]$ hdfs dfs -ls /user/ec2-user/UKDec/Spandana
+Found 6 items
+-rw-r--r--   3 ec2-user ec2-user         45 2025-12-03 11:30 /user/ec2-user/UKDec/Spandana/a_copy_local.txt
+-rw-r--r--   3 ec2-user ec2-user          6 2025-12-03 11:26 /user/ec2-user/UKDec/Spandana/a_local.txt
+-rwxrwx--x   4 ec2-user ec2-user          0 2025-12-03 11:49 /user/ec2-user/UKDec/Spandana/aa.txt
+-rw-r--r--   3 ec2-user ec2-user          6 2025-12-03 11:39 /user/ec2-user/UKDec/Spandana/ab.txt
+-rw-r--r--   3 ec2-user ec2-user          6 2025-12-03 10:58 /user/ec2-user/UKDec/Spandana/abc.txt
+-rw-r--r--   3 ec2-user ec2-user          6 2025-12-03 11:39 /user/ec2-user/UKDec/Spandana/b.txt
+[ec2-user@ip-172-31-8-235 ~]$ ls
+18nov                 b.txt                       flask-api           kubemlPr          spandy
+a_copy_local.txt      catbd125                    get-pip.py          merged_local.txt  ssh
+a_local.txt           c.txt                       hbase-site.xml      Microsoft         test2.txt
+a_local.txtcancelooo  danish                      hbase-site.xml.jar  muyiwa-flask-api  testpyspar.py
+APIPython             dashboard                   ian                 myagent           tmp
+a.txt                 dbapi_image.tar             jenkins             newfile.txt       Untitled1.ipynb
+azure_devops          delete_all_topics.sh        jenkins@tmp         newinput.txt      Untitled.ipynb
+bd_devops             Docker                      k8s-dbapi           notes.txt         untitled.py
+big_datajan2025       DockerTutorial              k8s-nginx           Prathyusha        usuk30
+BigData_May           docker.zip                  Kavya               readhbase.py      venv
+Big_Data_Training     elasticsearch_installation  kubeml              samuel
+[ec2-user@ip-172-31-8-235 ~]$ hdfs dfs -getmerge /user/ec2-user/UKDec/Spandana/ merged.txt
+[ec2-user@ip-172-31-8-235 ~]$ hdfs dfs -ls /user/ec2-user/UKDec/Spandana
+Found 6 items
+-rw-r--r--   3 ec2-user ec2-user         45 2025-12-03 11:30 /user/ec2-user/UKDec/Spandana/a_copy_local.txt
+-rw-r--r--   3 ec2-user ec2-user          6 2025-12-03 11:26 /user/ec2-user/UKDec/Spandana/a_local.txt
+-rwxrwx--x   4 ec2-user ec2-user          0 2025-12-03 11:49 /user/ec2-user/UKDec/Spandana/aa.txt
+-rw-r--r--   3 ec2-user ec2-user          6 2025-12-03 11:39 /user/ec2-user/UKDec/Spandana/ab.txt
+-rw-r--r--   3 ec2-user ec2-user          6 2025-12-03 10:58 /user/ec2-user/UKDec/Spandana/abc.txt
+-rw-r--r--   3 ec2-user ec2-user          6 2025-12-03 11:39 /user/ec2-user/UKDec/Spandana/b.txt
+[ec2-user@ip-172-31-8-235 ~]$ ls
+18nov                 b.txt                       flask-api           kubemlPr          samuel
+a_copy_local.txt      catbd125                    get-pip.py          merged_local.txt  spandy
+a_local.txt           c.txt                       hbase-site.xml      merged.txt        ssh
+a_local.txtcancelooo  danish                      hbase-site.xml.jar  Microsoft         test2.txt
+APIPython             dashboard                   ian                 muyiwa-flask-api  testpyspar.py
+a.txt                 dbapi_image.tar             jenkins             myagent           tmp
+azure_devops          delete_all_topics.sh        jenkins@tmp         newfile.txt       Untitled1.ipynb
+bd_devops             Docker                      k8s-dbapi           newinput.txt      Untitled.ipynb
+big_datajan2025       DockerTutorial              k8s-nginx           notes.txt         untitled.py
+BigData_May           docker.zip                  Kavya               Prathyusha        usuk30
+Big_Data_Training     elasticsearch_installation  kubeml              readhbase.py      venv
+[ec2-user@ip-172-31-8-235 ~]$ cat merged.txt
+hello
+My name is Kavya.
+It's a testing file.
+hello
+hello
+hello
+hello
+[ec2-user@ip-172-31-8-235 ~]$ hdfs dfs -getmerge /user/ec2-user/UKDec/Spandana/ merged.txt^C
+[ec2-user@ip-172-31-8-235 ~]$
